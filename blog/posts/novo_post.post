@@ -1,0 +1,18 @@
+@id: 1
+
+@title: Novo Blog! 
+
+@by: Rodrigo Vidal
+
+@tags: BlogHub
+
+@category: BlogHub
+
+@date: '2012-09-13'
+
+@deploy: true
+
+@content:
+##Bem vindo meu novo Blog :)
+
+Este é um post de test
