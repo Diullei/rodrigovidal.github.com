@@ -1,4 +1,8 @@
-##Bem vindo meu novo Blog :)
+##Introdução
 
-Este Ã© um post de test
+Bem vindo ao meu novo blog! Em breve estarei migrando todo o conteúdo do meu blog atual. Fique ligado!
+
+Este é meu novo espaço no github!
+
+Abraços!
 
