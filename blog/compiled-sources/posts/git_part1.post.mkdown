@@ -34,7 +34,7 @@ Este tipo de sistema trabalha muito bem com repositórios remotos, deste modo vo
 
 ![Valid XHTML](/blog/img/git2.png)
 
-A História do Git (resumidamente)
+##A História do Git (resumidamente)
 
 O Kernel do Linux é definitivamente um projeto opensource de larga escala. Na maior parte de seu ciclo de vida mudanças no software foram passadas adiante como patches ou arquivos. Em 2002 o projeto começou a utilizar um DVCS proprietário chamado BitKeeper.
 
