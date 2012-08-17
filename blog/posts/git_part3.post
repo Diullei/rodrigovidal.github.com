@@ -21,11 +21,9 @@ Existem duas maneiras básicas para se criar um repositório no Git. Através da cr
 
 Para começar a fazer o versionamento ou “track” de um projeto no Git, você precisa entrar no diretório do projeto e executar o comando:
 
-<pre>
-<code>
+<pre><code>
 $ git init
-</code>
-</pre>
+</code></pre>
 
 Este comando cria um subdiretório escondido chamado “.git” que contém todos os arquivos necessários para o repositório, ou seja, ele cria um esqueleto do seu repositório Git. Neste momento nada do seu projeto se encontra controlado, ou versionado, ou ainda com o status “tracked”.
 
@@ -37,12 +35,10 @@ Pronto nosso repositório foi criado.
 
 Agora vamos começar a versionar o nosso projeto e fazer o primeiro Commit.
 
-<pre>
-<code>
+<pre><code>
 $ git add . 
 $ git commit –m “Primeiro Commit”
-</code>
-</pre>
+</code></pre>
 
 O comando “git add . “ faz o track de todos os arquivos de todas as pastas recursivamente. O parâmetro –m  do comando commit permite que você digite uma mensagem para identificar o que foi feito neste commit. Toda vez que o projeto atinge um estado que você deseje salvar, você utiliza o comando commit.
 
@@ -104,17 +100,17 @@ Bom explicando o que podemos fazer. Caso eu realize um commit neste momento a ve
 ##Removendo arquivos
 
 Para remover um arquivo do Git você deve removê-lo da sua área de staging e então commitar. O comando “git rm” faz isso e ainda remove o arquivo do seu diretório, então o arquivo não aparecerá com o status Untracked.
-<code><pre>
+<pre><code>
 $ git rm GitBlog/Class1.cs
-</pre><code>
+</code></pre>
 Vamos supor que você tenha feito commit de todos os seus arquivos. Logo seu diretório está clean, como diria o Git. Você no entanto faz uma modificação no arquivo Class1.cs e agora ele está com o status Untracked. Você adiciona ele na área de Staging com o comando:
-<code><pre>
+<pre><code>
 $ git add Class1.cs
-</pre><code>
+</code></pre>
 Agora Class1.cs possui o status Tracked. No entanto você apenas deseja removê-lo da área de staging, levando-o do status Tracked para Untracked. Para isso execute o comando:
-<code><pre>
+<pre><code>
 $ git rm --cached Class1.cs
-</pre><code>
+</code></pre>
 Abaixo, o que aconteceu:
 
 ![Valid XHTML](/blog/img/git10.png)
@@ -125,10 +121,10 @@ Para isso o arquivo só será removido da área de staging após o próximo commit. I
 
 Seguindo o modelo anterior você realizou um “git add” no arquivo Class1.cs e agora ele se encontra staged. E você deseja simplesmente fazer o “Unstaging” do arquivo deixando-o com o status Untracked. Para isso execute o seguinte comando:
 
-<code><pre>
+<pre><code>
 $ git reset HEAD Class1.cs
 Desta forma como podemos ver a seguir o arquivo passou ao status Untracked.
-</pre><code>
+</code></pre>
 
 ![Valid XHTML](/blog/img/git11.png)
 
