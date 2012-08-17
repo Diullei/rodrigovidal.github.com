@@ -14,13 +14,11 @@
 
 @content:
  	
-Vamos lá pessoal, na parte 1, falei um pouco sobre os tipos de Sistemas de Controle de Versão. Seguindo..
+Vamos lá pessoal, na [parte 1](http://rodrigovidal.github.com/#!/post/2/Controle-de-Versão-com-Git---Parte-1), falei um pouco sobre os tipos de Sistemas de Controle de Versão. Seguindo..
 
 Bom espero que voce tenha baixado o Msysgit , caso não tenha feito ainda acesse aqui. A instalação é padrão Windows.
 
 Feito isso teremos o bash do Git instalado que é parte do pacote MSYS, que é uma coleção de utilitários GNU como bash, make gawk e grep que permite utilizar programas e aplicações que dependem de ferramentas Unix para serem utilizadas.
-
-
 
 ##Sua Identidade
 
