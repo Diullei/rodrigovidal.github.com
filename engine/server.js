@@ -12,7 +12,15 @@ if(process.argv.length > 2) {
 	}
 } 
 
-var virtual_path = '.';
+var virtual_path;
+if (process.platform === 'darwin')
+    virtual_path = '..';
+else if (process.platform === 'win32')
+    virtual_path = '.';
+else 
+    throw Error('Unknow platform');
+
+
 if(process.argv.length > 3) {
 	console.log('virtual_path: ' + process.argv[3]);
 	try{
@@ -33,8 +41,9 @@ http.createServer(function (request, response) {
 	
     if (filePath == virtual_path + '/')
         filePath = virtual_path + '/index.html';
-         
-	console.log(filePath);	 
+    
+    console.log('virtual path: ' + virtual_path);     
+	console.log('filepath: ' + filePath);
 		 
     var extname = path.extname(filePath);
     var contentType = 'text/html';
