@@ -116,12 +116,12 @@ Atom.prototype.toXml = function(){
 				date: x.date
 			});*/
 		
-			fs.writeFile(outputFolder + '\\' + x.ref, x.content ? x.content.toString('utf8') : '-- no content --', function(err) {
+			fs.writeFile(outputFolder + '/' + x.ref, x.content ? x.content.toString('utf8') : '-- no content --', function(err) {
 			    if(err) {
 			        console.log(err);
 			    }
 			}); 
-			fs.writeFile(outputFolder + '\\db-' + x.id + '-post-view.json', JSON.stringify(x).toString('utf8'), function(err) {
+			fs.writeFile(outputFolder + '/db-' + x.id + '-post-view.json', JSON.stringify(x).toString('utf8'), function(err) {
 			    if(err) {
 			        console.log(err);
 			    } else {
@@ -140,7 +140,7 @@ Atom.prototype.toXml = function(){
 			model.date = Date.parse(model.date);
 		});
 		var lastModel = linq.From(indexer).OrderByDescending(function(x){return x.date}).FirstOrDefault();
-		fs.writeFile(outputFolder + '\\db-last-post-view.json', JSON.stringify(lastModel).toString('utf8'), function(err) {
+		fs.writeFile(outputFolder + '/db-last-post-view.json', JSON.stringify(lastModel).toString('utf8'), function(err) {
 		    if(err) {
 		        console.log(err);
 		    }
@@ -148,7 +148,7 @@ Atom.prototype.toXml = function(){
 
 		linq.From(indexer).ForEach(function(x){ delete x.content; });
 
-		fs.writeFile(outputFolder + '\\db-posts-view.json', JSON.stringify(indexer).toString('utf8'), function(err) {
+		fs.writeFile(outputFolder + '/db-posts-view.json', JSON.stringify(indexer).toString('utf8'), function(err) {
 		    if(err) {
 		        console.log(err);
 		    }
@@ -156,4 +156,4 @@ Atom.prototype.toXml = function(){
 	};
 
 	exports.JsonDatabaseManager = JsonDatabaseManager;
-})(exports);
+})(exports);	

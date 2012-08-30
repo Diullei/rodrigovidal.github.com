@@ -24,7 +24,7 @@ _cmd.compile = function(){
 		console.log('\nSuccessful');
 	}
 	catch(err){
-		console.log('Error: ' + err.message);
+		console.log('Error: ' + err.message);	
 	}
 };
 
