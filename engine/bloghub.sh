@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $1 == '-u' ]
 then
     echo "Do not support update on OSX.. yet!"
