@@ -23,7 +23,7 @@
             <td class="icon"> <span class="mini-icon mini-icon-directory"></span> </td>
             <td class="content"> <a href="#!/post/<%= model.id %>/<%= model.linkTitle %>" class="js-slide-to js-rewrite-sha"><%= model.title %></a></td>
 			<td></td>
-            <td class="age"><time class="js-relative-date"><%= new Date(model.date).toString("dd-MM-yyyy") %> [<%= prettyDate(new Date(model.date).toString("yyyy-MM-ddTHH:mm:ss")) %>]</time></td>
+            <td class="age"><time class="js-relative-date"><%= new Date(model.date).toString("dd-MM-yyyy") %></time></td>
             <td class="message"><a href="#" class="message"><%= model.by %></a></td>
           </tr>
 			
