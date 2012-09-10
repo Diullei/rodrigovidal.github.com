@@ -50,7 +50,5 @@ Com isso sabemos porque o compilador do F# consegue saber o tipo do valor Fibona
 
 Por hoje é isso pessoal.
 
-Abraço!
-
 Abraço,
 Rodrigo Vidal
