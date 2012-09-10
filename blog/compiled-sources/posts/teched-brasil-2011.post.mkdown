@@ -1,0 +1,29 @@
+![Valid XHTML](/blog/img/teched.png)
+
+Pessoal tudo bem?
+
+No ultimo mês estive envolvido com o TechEd Brasil, que para quem não sabe, é o maior evento realizado pela Microsoft no Brasil. Fui convidado para palestrar sobre um tema que adoro, que é a linguagem F# e  a abordagem funcional em desenvolvimento de software.
+
+Foram semanas de preparação para entregar um conteúdo adequado, mas que não fosse iniciante. Muitas pessoas me pediam um conteúdo um pouco mais avançado, e que não seria tão trivial ao primeiro contato com a linguagem. A trilha em que palestrei foi carinhosamente chamada de HeadShot, e foi o que busquei atingir com a palestra. Foi uma das experiencias mais incríveis da minha vida profissional.
+
+Para você que estava presente e não conseguiu pegar todos os pontos chave, ou para você que por algum motivo não foi mas gostaria de saber o que foi abordado, segue a setlist dos topicos.
+
+F# Interactive
+Imutabilidade
+Aplicação parcial de funções
+Composição
+Computation Expressions
+O conceito The World is Information-Rich
+Lançamento do CTP do F# 3.0
+F# 3.0 Type Providers
+F# 3.0 Query expressions
+Se você estava lá gostaria de receber feedbacks e agradecer imensamente a sua presença e a oportunidade de estar falando um pouco para tantos desenvolvedores.
+
+Vou abordar esses temas em futuros posts, então fiquem ligados.
+
+Até a próxima!
+
+![Valid XHTML](/blog/img/teched-fsharp.jpg)
+
+Abraço,
+Rodrigo Vidal

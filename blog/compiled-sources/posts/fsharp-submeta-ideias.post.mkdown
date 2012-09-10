@@ -1,0 +1,10 @@
+Olá pessoal, você pode contribuir para linguagem F# e outros produtos relacionados ao Visual Studio, dando sugestões e votando nas melhorias.
+
+http://visualstudio.uservoice.com/forums/121579-visual-studio/category/30935-languages-f-
+
+A comunidade F# tem votado bastante para melhorias principalmente na IDE, e caracteristicas como Type Classes, Compiler as a Service, e extensibilidade do compilador através de uma linguagem integrada como na linguagem Boo.
+
+Por enquanto é só.
+
+Abraço,
+Rodrigo Vidal
