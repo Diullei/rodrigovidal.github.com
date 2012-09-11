@@ -1,0 +1,220 @@
+
+Olá pessoal, tudo bem?
+
+Vamos falar hoje sobre sobre a linguagem mandatória para escrever aplicações web. O Javascript. E quem não tem medo do Javascript? Até hoje vejo que muitos desenvolvedores não deram e ainda não dão importância, para esta linguagem. A maioria se limita a criar funções simples com outras funções logo abaixo em um código que beira o impossível de manter. Ou então se limita ao simples uso de plugins jQuery desenvolvidos por terceiros, para colocar uma calendário mais bonitinho na aplicação. Bom, já passou da hora de você saber que javascript é extremamente importante, e você deveria domina&minus;la tanto quanto a linguagem server&minus;side de preferência. Eu realmente espero que você domine está ultima. 
+
+Não pretendo aqui contar a historia do JavaScript, ou justificar, a razão de ela possuir alguns problemas comportamentais, o importante é que você aprenda a escrever um bom código e tenha produtividade, sem esbarrar em bugs inesperados.
+
+Bom, precisamos mudar isso, portanto, vamos ver hoje os tipos primitivos.
+
+Qualquer valor que você use pertence a um tipo. Em javascript existem os seguintes tipos primitivos:
+
+**Number**  &minus; incluir números inteiros bem como de ponto flutuante.
+
+**String** &minus; qualquer numero de caracteres, por exemplo "a", "ab", "ab e c".
+
+**Boolean** &minus; assume apenas dois valores, true, ou false.
+
+**Undefined** &minus; quando você tenta acessar uma variável que não existe, você recebe o valor especial undefined. O mesmo acontece para uma variável que ainda não foi inicializada. O javascript na verdade a inicializa para undefined por debaixo dos panos.
+
+**Null** &minus; este é outro tipo especial que somente possui um valor, o valor null. Que significa, ausência de valor, vazio, ou nada. A diferença com undefined é que se uma variável tem o valor null, ela está definida, e só acontece quando é definida para null.
+
+Qualquer valor que não pertença a nenhum dos 5 tipos primitivos listados acima é do tipo Object. 
+Então basta lembrarmos que em Javascript o tipo dos dados pode ser:
+
+Primitivo (os 5 listados acima)
+Não&minus;Primitivo (object)
+
+###O operador typeof
+
+Se você quer saber o tipo de uma variável ou de um valor, você pode utilizar o operador typeof. Este operador retorna uma string que representa o tipo do dado. Por exemplo o operador pode retornar "number", "string", "boolean", "undefined", "object". Vejamos alguns exemplos:
+
+###Números
+
+<pre><code>
+//Inteiro
+var n = 1234;
+typeof n;
+>> "number"
+ 
+//Ponto Flutuante
+var n = 1.23;
+typeof n;
+>> "number"
+ 
+//Octal
+var n = 0377;
+typeof n;
+>> "number"
+ 
+//Hexa
+var n = 0x00;
+typeof n;
+>> "number"
+ 
+//Exponent
+var n = 1e1;
+typeof n;
+>> "number"
+</code></pre>
+
+Existem um valor especial em JavaScript chamado Infinity, veja bem, é um valor especial e não um tipo. Que representa como o próprio nome diz um valor Infinito, ou um valor que o JavaScript não consegue lidar.
+
+<pre><code>
+typeof Infinity;
+>> "number"
+</code></pre>
+
+Mas como obter este valor especial Infinity, bom, podemos.
+
+<pre><code>
+1e309;
+>> Infinity
+ 
+6/0;
+>> Infinity
+</code></pre>
+Bom, Infinity representa uma numero extremamente grande, e como representar um numero extremamente pequeno?
+
+<pre><code>
+&minus;1/0
+>> &minus;Infinity
+</code></pre>
+Bonito não?
+
+Existe ainda um outro tipo especial, quando estamos lidando com números! O valor NaN! Quem nunca o viu, que atire a primeira pedra 
+
+A primeira coisa que eu gosto de deixar claro sobre NaN é que ele é um numero! O que? Ahn? Isso mesmo! Veja..
+
+<pre><code>
+typeof NaN;
+>> "number"
+</code></pre>
+
+Oh my God! Provavelmente foi isso que você exclamou ao ver este exemplo! Você obtém o valor NaN quando tenta realizar uma operação que seria realizada sobre  inteiros, mas esta operação falha. Ai você obtém como retorno este tipo especial. Simples não?
+
+Vejamos alguns exemplos:
+
+<pre><code>
+var a = 10 * "JavaScript";
+a
+>> NaN
+ 
+1 + 2 + 3 + 4 + NaN;
+>> NaN
+</code></pre>
+Perfeito!
+
+###Strings
+
+Como vocês sabem strings são uma sequencia de caracteres. Em Javascript qualquer valor colocado entre aspas simples OU duplas é uma considerado uma string. Vejamos alguns exemplos:  
+
+<pre><code>
+typeof "1";
+>> "string"
+ 
+typeof "texto";
+>> "string"
+ 
+typeof 'texto';
+>> "string"
+ 
+typeof "";
+>> "string"
+</code></pre>
+
+###Conversões com String
+
+Quando você usa uma string como uma operando em uma operação aritmética (com exceção da adição, veremos o porquê), a string é convertida em um numero por debaixo dos panos.
+
+<pre><code>
+var s = 3 * '1';
+>> 3
+typeof s
+>> "integer"
+ 
+var t = 3 + '1'
+>> "31"
+typeof t
+>> "string"
+</code></pre>
+
+Como podemos ver caso o operador seja adição (+) o numero 3 é convertido para string por implicitamente e o resultado é uma string "31". Para qualquer outro operador a string seria convertida em um numero como no primeiro exemplo acima.
+
+Caso a conversão implícita falhe o resultado, como não poderia deixar de ser, será NaN.
+
+<pre><code>
+"texto" * 3;
+>> NaN
+</code></pre>
+###Boolean
+
+Bom como vimos existem apenas dois valores que percentem ao tipo Boolean, true e false;
+
+<pre><code>
+var b = true;
+typeof b;
+>> "boolean"
+ 
+var b = false;
+typeof b;
+>> "boolean"
+</code></pre>
+
+Tudo convertido para boolean é true, com exceção dos seguintes 6 valores:
+
+""
+null
+undefined
+0
+NaN
+false
+
+###Undefined
+
+Você recebe undefined como valor quando você tenta usar uma variável que não existe ou que ainda não foi inicializada
+
+<pre><code>
+foo
+>> foo is not defined
+ 
+typeof foo
+>> "undefined"
+ 
+var x;
+typeof x;
+>> "undefined"
+ 
+1 + undefined;
+>> NaN
+ 
+1 * undefined;
+>> NaN
+ 
+!!undefined
+>> false
+ 
+"" + undefined
+>> "undefined"
+</code></pre>
+
+###Null
+O valor null não é atribuído pelo Javascript pode debaixo dos panos, ele somente pode ter vindo de uma inicialização do seu código
+<pre><code>
+var variável = null;
+>> null
+typeof variável
+>> "object"
+ 
+var i = 1 + null;
+>> 1
+ 
+1*null;
+>> 0
+</code></pre>
+
+Vemos que o valor null é considerado um objeto, o que pode parecer um pouco estranho, ter um objeto que é a representação de nada. Mas veremos mais sobre em futuros posts.
+
+Bom por hoje era isso pessoal, espero ter desmistificado um pouco sobre os tipos primitivos no Javascript.
+
+Abraço!

@@ -84,7 +84,7 @@ Atom.prototype.toXml = function(){
 				if(!ids[post.id]) ids[post.id] = true; else throw "Can't duplicate post id.";
 					
 			  	post.ref = file.toLowerCase() + '.mkdown';
-				
+
 				if(post.deploy == 'true') {
 					indexer.push(post);
 					console.log('Mapping: ' + post.title);

@@ -35,7 +35,7 @@ private int SumNumbers(int from, int to)
 }
 </code></pre>
 
-Como podem ver todo o corpo do método é uma expressão única que retorna um valor. Em C# isso significa que o método deveria começar com return. E nós também não poderíamos usar return e nenhum outro lugar. Em C# if-then-else é um Statement, já em F# é uma Expressão. Note que são abordagens diferentes, e linguagens funcionais utilizam Expressions em detrimento de Statements.
+Como podem ver todo o corpo do método é uma expressão única que retorna um valor. Em C# isso significa que o método deveria começar com return. E nós também não poderíamos usar return e nenhum outro lugar. Em C# if&minus;then&minus;else é um Statement, já em F# é uma Expressão. Note que são abordagens diferentes, e linguagens funcionais utilizam Expressions em detrimento de Statements.
 
 Por hoje era isso pessoal!
 

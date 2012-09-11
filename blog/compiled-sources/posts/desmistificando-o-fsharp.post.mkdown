@@ -3,7 +3,7 @@ Vamos começar a escrever nossos primeiros códigos utilizando F#. Para iniciar 
 
 ##Configurando o ambiente
 
-A Linguagem F# foi embarcada no Visual Studio 2010. Se tornando uma linguagem de primeira classe. Ao instalar o Visual Studio 2010 você tem a opção de instalar o F#. Caso não o tenha feito no momento da instalação não tem problema, você pode baixá-lo aqui e instalá-lo. O F# também funciona para você que usa Visual Studio 2008, basta utilizar o mesmo link anterior.
+A Linguagem F# foi embarcada no Visual Studio 2010. Se tornando uma linguagem de primeira classe. Ao instalar o Visual Studio 2010 você tem a opção de instalar o F#. Caso não o tenha feito no momento da instalação não tem problema, você pode baixá&minus;lo aqui e instalá&minus;lo. O F# também funciona para você que usa Visual Studio 2008, basta utilizar o mesmo link anterior.
 
 A maneira mais fácil de começar com F# através do VS2010 é criando um novo projeto. Para isso siga os passos File > New Project > Visual F# > F# Application.
 
@@ -15,7 +15,7 @@ Embora este não seja o mais simples possível, não haveria algo muito interess
 
 ##Let Keyword
 
-A palavra-chave let realiza um value-binding. Em um primeiro momento podemos pensar como uma declaração de um valor e uma atribuição. No entanto, há uma pequena diferença que neste momento não é perceptível, mas que falaremos mais a frente sobre.
+A palavra&minus;chave let realiza um value&minus;binding. Em um primeiro momento podemos pensar como uma declaração de um valor e uma atribuição. No entanto, há uma pequena diferença que neste momento não é perceptível, mas que falaremos mais a frente sobre.
 
 Após o valor Olá F# ser atribuído ao símbolo message, o programa continua com uma chamada a função printfn. É importante notar que os argumentos passados para a funções em F# são geralmente separados apenas por espaços ao invés de se utilizar parênteses e virgulas. No entanto essa sintaxe também pode ser utilizada, quando fizer sentido. Mas aviso que na maior parte dos sistemas escritos em F# seu uso não é comum.
 
@@ -25,7 +25,7 @@ Agora você pode perfeitamente executar seu primeiro aplicativo escrito em F#.
 
 ## F# Interactive
 
-F# possui um ambiente interativo conhecido como F# Interactive que nada mais é do que um read-eval-print-loop (REPL).
+F# possui um ambiente interativo conhecido como F# Interactive que nada mais é do que um read&minus;eval&minus;print&minus;loop (REPL).
 
 Através dele você pode testar snnipets e trechos de código interativamente de maneira bem explorativa.
 

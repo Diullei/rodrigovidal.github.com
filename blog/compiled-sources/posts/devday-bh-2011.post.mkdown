@@ -4,33 +4,33 @@ O que rolou no evento?
 
 ##Agenda 
 
-Palestra com Márcio Sete - Planejamento e Acompanhamento Ágil.
+Palestra com Márcio Sete &minus; Planejamento e Acompanhamento Ágil.
 
-Lightning Action com Gibran Silva - NoSql em foco. Onde e quando utilizar.
+Lightning Action com Gibran Silva &minus; NoSql em foco. Onde e quando utilizar.
 
-Lightning Action com Glauber Assunção - Qualidade de Codificação: Expressividade e Agilidade através do código.
+Lightning Action com Glauber Assunção &minus; Qualidade de Codificação: Expressividade e Agilidade através do código.
 
-Palestra com Vinicius Quaiato - Windows Azure: O que é, o que muda e como tirar o melhor proveito.
+Palestra com Vinicius Quaiato &minus; Windows Azure: O que é, o que muda e como tirar o melhor proveito.
 
-Lightning Action com Rogger Soares - TDD na prática: Mocks vs. Stubs.
+Lightning Action com Rogger Soares &minus; TDD na prática: Mocks vs. Stubs.
 
-Palestra com Daniel Lopes - A Importância do Front-end e as novidades do Rails 3.1.
+Palestra com Daniel Lopes &minus; A Importância do Front&minus;end e as novidades do Rails 3.1.
 
-Lightning Action com Walter Dias - As 10 maiores falhas de segurança e como executá-las.
+Lightning Action com Walter Dias &minus; As 10 maiores falhas de segurança e como executá&minus;las.
 
-Palestra com Rodrigo Vidal - Programação Funcional
+Palestra com Rodrigo Vidal &minus; Programação Funcional
 
-Lightning Action com Higor César - Introduzindo mudanças.
+Lightning Action com Higor César &minus; Introduzindo mudanças.
 
-Palestra com Giovanni Bassi - Evoluindo o Javascript: programando com CoffeeScript
+Palestra com Giovanni Bassi &minus; Evoluindo o Javascript: programando com CoffeeScript
 
-Palestra com Edgard Davidson - Qualidade de Código: boas práticas, princípios e patterns.
+Palestra com Edgard Davidson &minus; Qualidade de Código: boas práticas, princípios e patterns.
 
 O evento superou em muito minhas expectativas. Uma organização impecável e uma grade de palestras variada e interessante. Foi um imenso prazer ouvir o que estes profissionais tinham a nos dizer.
 
-Na minha palestra passei sobre os principais conceitos sobre programação funcional, e pretendo mostra-los aqui no blog através de posts, como referência aos interessados no assunto.
+Na minha palestra passei sobre os principais conceitos sobre programação funcional, e pretendo mostra&minus;los aqui no blog através de posts, como referência aos interessados no assunto.
 
-Foi muito bom ter revisto os amigos @DiogoDamiani, @Helbertm, @Flavio110, @DouglasAguiar, @GiovanniBassi, @VQuaiato. (Agradecimento especial ao @Helbertm por ter agenciado a minha ida, e ao @Flavio110 por ter nos buscado no aeroporto). Isso é o melhor do evento. Bate-papos entre amigos que não vemos com tanta frequencia.
+Foi muito bom ter revisto os amigos @DiogoDamiani, @Helbertm, @Flavio110, @DouglasAguiar, @GiovanniBassi, @VQuaiato. (Agradecimento especial ao @Helbertm por ter agenciado a minha ida, e ao @Flavio110 por ter nos buscado no aeroporto). Isso é o melhor do evento. Bate&minus;papos entre amigos que não vemos com tanta frequencia.
 
 Conheci mais uma galera animal lá. E como eu imaginei o povo de MG é demais! Muito networking, se você não foi não perca a edição 2012. Pretendo estar lá novamente \o/.
 
@@ -38,7 +38,7 @@ Um outro ponto alto no evento foi assistir o meu amigo @HigorCesar mostrar o cen
 
 Segue slide da minha palestras e algumas fotos..
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/9078787" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/rodrigovidal777/devday-bh-2011-programao-funcional" title="DevDay BH 2011 Programação Funcional" target="_blank">DevDay BH 2011 Programação Funcional</a> </strong> from <strong><a href="http://www.slideshare.net/rodrigovidal777" target="_blank">Rodrigo Vidal</a></strong> </div>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/9078787" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border&minus;width:1px 1px 0;margin&minus;bottom:5px" allowfullscreen> </iframe> <div style="margin&minus;bottom:5px"> <strong> <a href="http://www.slideshare.net/rodrigovidal777/devday&minus;bh&minus;2011&minus;programao&minus;funcional" title="DevDay BH 2011 Programação Funcional" target="_blank">DevDay BH 2011 Programação Funcional</a> </strong> from <strong><a href="http://www.slideshare.net/rodrigovidal777" target="_blank">Rodrigo Vidal</a></strong> </div>
 
 
 ![Valid XHTML](/blog/img/devday1.png)

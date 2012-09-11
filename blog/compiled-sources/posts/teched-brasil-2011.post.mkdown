@@ -13,7 +13,7 @@ Imutabilidade
 Aplicação parcial de funções
 Composição
 Computation Expressions
-O conceito The World is Information-Rich
+O conceito The World is Information&minus;Rich
 Lançamento do CTP do F# 3.0
 F# 3.0 Type Providers
 F# 3.0 Query expressions
@@ -23,7 +23,7 @@ Vou abordar esses temas em futuros posts, então fiquem ligados.
 
 Até a próxima!
 
-![Valid XHTML](/blog/img/teched-fsharp.jpg)
+![Valid XHTML](/blog/img/teched&minus;fsharp.jpg)
 
 Abraço,
 Rodrigo Vidal

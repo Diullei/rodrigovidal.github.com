@@ -1,5 +1,5 @@
  	
-Olá pessoal, pretendo voltar com os posts no blog com mais frequência desta vez. Esta é uma das metas para este novo ano, e farei o máximo para alcançá-la. Começando leve
+Olá pessoal, pretendo voltar com os posts no blog com mais frequência desta vez. Esta é uma das metas para este novo ano, e farei o máximo para alcançá&minus;la. Começando leve
 
 ##Motivação
 
@@ -8,7 +8,7 @@ Uma das razões para que isso acontecesse é a intenção de contribuir para pro
 
 ##O que é um Sistema de Controle de Versão?
 
-Controle de Versão é um sistema que grava as mudanças ocorridas nos arquivos com o passar do tempo para que você possa recuperar versões anteriores especificas. No nosso caso, como desenvolvedores, iremos versionar nosso código-fonte, embora você possa fazê-lo com qualquer tipo de arquivo.
+Controle de Versão é um sistema que grava as mudanças ocorridas nos arquivos com o passar do tempo para que você possa recuperar versões anteriores especificas. No nosso caso, como desenvolvedores, iremos versionar nosso código&minus;fonte, embora você possa fazê&minus;lo com qualquer tipo de arquivo.
 
 ##Sistemas de Controle de Versão Local
 
@@ -20,15 +20,15 @@ Com o intuito de evitar esse problemas desenvolvedores criaram Sistemas de Contr
 
 ##Sistemas de Controle de Versão Centralizados
 
-No entanto um problema maior estava por vir, a necessidade de colaboração entre os desenvolvedores nos projetos fez surgir Sistemas de Controle de Versão Centralizados. Um exemplo deste modelo de VCS (Version Control System) é o Team Foundation Server - Source Control. Neste modelo um servidor contém todos os arquivos versionados e os clientes enviam e baixam arquivos deste repositório centralizado.
+No entanto um problema maior estava por vir, a necessidade de colaboração entre os desenvolvedores nos projetos fez surgir Sistemas de Controle de Versão Centralizados. Um exemplo deste modelo de VCS (Version Control System) é o Team Foundation Server &minus; Source Control. Neste modelo um servidor contém todos os arquivos versionados e os clientes enviam e baixam arquivos deste repositório centralizado.
 
-Entre as vantagens deste tipo de sistema é a transparência na realização das atividades, pois todos sabem o que o outro está fazendo, administradores tem um maior controle sobre o que é possível fazer, como estabelecer politicas de check-in, além da teórica facilidade de administração.
+Entre as vantagens deste tipo de sistema é a transparência na realização das atividades, pois todos sabem o que o outro está fazendo, administradores tem um maior controle sobre o que é possível fazer, como estabelecer politicas de check&minus;in, além da teórica facilidade de administração.
 
 ![Valid XHTML](/blog/img/git2.png)
 
 ##Sistemas de Controle de Versão Distribuídos
 
-Em DVCS (Distributed Version Control Systems) os clientes não fazem simplesmente um check-out dos arquivos. Na verdade ele espelha toda o repositório. Desta forma se algum server cair, qualquer um dos clientes pode recupera-lo, copiando o repositório novamente e restaurando-o. Entre exemplos deste sistema estão Mercurial, Git.
+Em DVCS (Distributed Version Control Systems) os clientes não fazem simplesmente um check&minus;out dos arquivos. Na verdade ele espelha toda o repositório. Desta forma se algum server cair, qualquer um dos clientes pode recupera&minus;lo, copiando o repositório novamente e restaurando&minus;o. Entre exemplos deste sistema estão Mercurial, Git.
 
 Este tipo de sistema trabalha muito bem com repositórios remotos, deste modo você pode colaborar com diferentes grupos de pessoas de diferentes maneiras simultaneamente no mesmo projeto. Permitindo atingir fluxos de trabalho que não são possível em sistemas centralizados.
 
