@@ -1,7 +1,7 @@
 
 Olá pessoal, tudo bem?
 
-Vamos falar hoje sobre sobre a linguagem mandatória para escrever aplicações web. O Javascript. E quem não tem medo do Javascript? Até hoje vejo que muitos desenvolvedores não deram e ainda não dão importância, para esta linguagem. A maioria se limita a criar funções simples com outras funções logo abaixo em um código que beira o impossível de manter. Ou então se limita ao simples uso de plugins jQuery desenvolvidos por terceiros, para colocar uma calendário mais bonitinho na aplicação. Bom, já passou da hora de você saber que javascript é extremamente importante, e você deveria domina&minus;la tanto quanto a linguagem server&minus;side de preferência. Eu realmente espero que você domine está ultima. 
+Vamos falar hoje sobre sobre a linguagem mandatória para escrever aplicações web. O Javascript. E quem não tem medo do Javascript? Até hoje vejo que muitos desenvolvedores não deram e ainda não dão importância, para esta linguagem. A maioria se limita a criar funções simples com outras funções logo abaixo em um código que beira o impossível de manter. Ou então se limita ao simples uso de plugins jQuery desenvolvidos por terceiros, para colocar uma calendário mais bonitinho na aplicação. Bom, já passou da hora de você saber que javascript é extremamente importante, e você deveria domina-la tanto quanto a linguagem server-side de preferência. Eu realmente espero que você domine está ultima. 
 
 Não pretendo aqui contar a historia do JavaScript, ou justificar, a razão de ela possuir alguns problemas comportamentais, o importante é que você aprenda a escrever um bom código e tenha produtividade, sem esbarrar em bugs inesperados.
 
@@ -9,21 +9,21 @@ Bom, precisamos mudar isso, portanto, vamos ver hoje os tipos primitivos.
 
 Qualquer valor que você use pertence a um tipo. Em javascript existem os seguintes tipos primitivos:
 
-**Number**  &minus; incluir números inteiros bem como de ponto flutuante.
+**Number**  - incluir números inteiros bem como de ponto flutuante.
 
-**String** &minus; qualquer numero de caracteres, por exemplo "a", "ab", "ab e c".
+**String** - qualquer numero de caracteres, por exemplo "a", "ab", "ab e c".
 
-**Boolean** &minus; assume apenas dois valores, true, ou false.
+**Boolean** - assume apenas dois valores, true, ou false.
 
-**Undefined** &minus; quando você tenta acessar uma variável que não existe, você recebe o valor especial undefined. O mesmo acontece para uma variável que ainda não foi inicializada. O javascript na verdade a inicializa para undefined por debaixo dos panos.
+**Undefined** - quando você tenta acessar uma variável que não existe, você recebe o valor especial undefined. O mesmo acontece para uma variável que ainda não foi inicializada. O javascript na verdade a inicializa para undefined por debaixo dos panos.
 
-**Null** &minus; este é outro tipo especial que somente possui um valor, o valor null. Que significa, ausência de valor, vazio, ou nada. A diferença com undefined é que se uma variável tem o valor null, ela está definida, e só acontece quando é definida para null.
+**Null** - este é outro tipo especial que somente possui um valor, o valor null. Que significa, ausência de valor, vazio, ou nada. A diferença com undefined é que se uma variável tem o valor null, ela está definida, e só acontece quando é definida para null.
 
 Qualquer valor que não pertença a nenhum dos 5 tipos primitivos listados acima é do tipo Object. 
 Então basta lembrarmos que em Javascript o tipo dos dados pode ser:
 
 Primitivo (os 5 listados acima)
-Não&minus;Primitivo (object)
+Não-Primitivo (object)
 
 ###O operador typeof
 
@@ -77,8 +77,8 @@ Mas como obter este valor especial Infinity, bom, podemos.
 Bom, Infinity representa uma numero extremamente grande, e como representar um numero extremamente pequeno?
 
 <pre><code>
-&minus;1/0
->> &minus;Infinity
+-1/0
+>> -Infinity
 </code></pre>
 Bonito não?
 

@@ -1,7 +1,7 @@
 
 Olá pessoal,
 
-Continuando a série, sobre JS, vamos falar um pouco sobre dois operadores extremamente simples. Eles são capazes de comparar dois valores e dizer se eles são iguais ou não. Realmente simples não? Provavelmente, você sabe muito bem, como isso funciona na sua linguagem server&minus;side, ao comparar dois valores, dois arrays, ou até mesmo dois objetos. No entanto, olhando o código que já tive a oportunidade de observar nas empresas, percebo que os desenvolvedores não entendem muito bem como isso se dá no JavaScript. Então vamos entender de uma vez por todas, se é ou não é igual.
+Continuando a série, sobre JS, vamos falar um pouco sobre dois operadores extremamente simples. Eles são capazes de comparar dois valores e dizer se eles são iguais ou não. Realmente simples não? Provavelmente, você sabe muito bem, como isso funciona na sua linguagem server-side, ao comparar dois valores, dois arrays, ou até mesmo dois objetos. No entanto, olhando o código que já tive a oportunidade de observar nas empresas, percebo que os desenvolvedores não entendem muito bem como isso se dá no JavaScript. Então vamos entender de uma vez por todas, se é ou não é igual.
 
 A primeira coisa a se saber é que Javascript possui dois operadores de igualdade! O que? Dois? É isso mesmo. Você provavelmente utiliza um deles com bastante frequência: O "==". Agora você pode pensar, nossa que obvio. Isso eu já sabia. Mas você realmente sabe como este operador funciona? Você conhece seu irmão menos brincalhão? O "===" ?
 
@@ -9,7 +9,7 @@ Não. Eu não errei o operador acima, realmente são 3 (três) "igual" seguidos.
 
 Os operadores == e === checam se dois valores são iguais mas com duas definições diferentes de igualdade. Ambos os operadores aceitam operandos de qualquer tipo, e ambos retornam true se os operando forem iguais e false se eles forem diferentes. O operador === é conhecido como operador de igualdade estrita, e checa quando os dois operandos são idênticos, usando uma definição mais estrita. O operador == é conhecido como operador de igualdade, ele checa quando os dois operador são iguais usando uma definição mais relaxada que permite conversões de tipo.
 
-Javascript suporta os operadores =, ==, ===. Podemos lê&minus;los da seguinte forma: "é atribuído para", "é igual a", "é estritamente igual a" respectivamente.
+Javascript suporta os operadores =, ==, ===. Podemos lê-los da seguinte forma: "é atribuído para", "é igual a", "é estritamente igual a" respectivamente.
 
 Os operadores != e !== testam para o oposto exato dos operadores == e ===.
 
@@ -23,7 +23,7 @@ Se os dois valores são de tipo diferentes, eles não são iguais.
 Se os dois valores são null ou ambos são undefined, eles são iguais.
 Se ambos os valores são o valor booleano true ou ambos são o valor booleano false, eles são iguais
 Se um ou mais valores são NaN, eles não são iguais. O valor NaN não é nunca igual a nenhum valor, incluindo ele mesmo.
-Se ambos os valores são números e tem o mesmo valor, eles são iguais; Se um valor é 0 e o outro &minus;0 eles também são iguais.
+Se ambos os valores são números e tem o mesmo valor, eles são iguais; Se um valor é 0 e o outro -0 eles também são iguais.
 Se ambos os valores são strings e contém exatamente os mesmos 16 bits, nas mesmas posições, então são iguais. Se as strings diferirem em tamanho ou posicionamento, não são iguais.
 Se ambos os valores referirem para o mesmo objeto, array, ou função, eles são iguais. Se referem para objetos diferentes não são iguais, mesmo que ambos tenham propriedades idênticas.
 
@@ -70,7 +70,7 @@ NaN === NaN
 2 === 2
 >> true
  
-0 === &minus;0
+0 === -0
 >> true
  
 "js" === " js"

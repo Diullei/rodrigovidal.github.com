@@ -77,7 +77,7 @@ let sumAllMultiplesOf3Or5 list =
     let mutable total = 0
     for i in list do
         if i % 3 = 0 || i % 5 = 0 then
-            total <&minus; total + i
+            total <- total + i
     total
 </code></pre>
 
@@ -88,7 +88,7 @@ Bem vamos ao codigo:
 sumAllMultiplesOf3Or5 é uma função e possui um parametro chamado list.
 Os espaços em branco (tab) delimitam o escopo da função, assim como na linguagem Python, o que torna a linguagem mais sucinta e elegante. O padrão são 4 backspaces.
 A keyword mutable cria um valor mutável (que seria equivalente a uma variável na maior parte dos casos).
-O operador <&minus; realiza uma atribuição em valores mutáveis.
+O operador <- realiza uma atribuição em valores mutáveis.
 O ultimo termo da função é o seu valor de retorno, dispensando o uso da palavra chave return.
 
 ##A Implementação Funcional
@@ -105,7 +105,7 @@ O modulo List possui funções especificas para lidar como listas, entre elas te
 Em programação funcional é extremamente importante conhecer as assinaturas das funções. Elas exprimem de maneira eficaz sua interface, e possibilitam seu entendendimento. #ficaDica.
 
 
-##O Operador Pipe&minus;Forward |>
+##O Operador Pipe-Forward |>
 
 Este é um dos operadores mais importantes do F#. Não vou entrar em muitos detalhes agora mas sua definição equivale ao seguinte:
 

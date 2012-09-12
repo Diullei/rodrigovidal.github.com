@@ -31,13 +31,13 @@ O comando git add .  faz o track de todos os arquivos de todas as pastas rec
 
 Cada arquivo no seu diretório pode possuir um de dois status: Tracked ou Untracked.
 
-O status Tracked informa que os arquivos estavam no último snapshot. Eles podem ter 3 sub&minus;status: unmodified, modified ou staged. O status Untracked marcam os arquivos que estão no seu diretório mas não estavam no último snapshot e não estão em staging.
+O status Tracked informa que os arquivos estavam no último snapshot. Eles podem ter 3 sub-status: unmodified, modified ou staged. O status Untracked marcam os arquivos que estão no seu diretório mas não estavam no último snapshot e não estão em staging.
 
 ![Valid XHTML](/blog/img/git5.png)
 
 ##Verificando o Status dos Arquivos
 
-Uma maneira simples para ver os status dos arquivos para poder manipula&minus;los com facilidade é utilizar o comando:
+Uma maneira simples para ver os status dos arquivos para poder manipula-los com facilidade é utilizar o comando:
 
 <pre><code>
 $ git status
@@ -53,7 +53,7 @@ Vamos adicionar um arquivo ao nosso projeto e ver o que acontece. Adicionarei um
 
 ![Valid XHTML](/blog/img/git7.png)
 
-Pode&minus;se notar que a classe que criamos (no arquivo Class1.cs) se encontra untracked. Ou seja, o Git já reconheceu o arquivo e verificou que ele não se encontra no ultimo snapshot(commit). Para inclui&minus;la, você deve fazer explicitamente como veremos a seguir.
+Pode-se notar que a classe que criamos (no arquivo Class1.cs) se encontra untracked. Ou seja, o Git já reconheceu o arquivo e verificou que ele não se encontra no ultimo snapshot(commit). Para inclui-la, você deve fazer explicitamente como veremos a seguir.
 
 ##Fazendo Tracking de novos arquivos
 
@@ -80,11 +80,11 @@ E se eu modificar o conteúdo desta classe no meu editor de código? Vamos ver o
 
 Uau! Nosso arquivo agora se encontra sob dois cabeçalhos, tanto em Changes to be commited quando em Changed but not updated.
 
-Bom explicando o que podemos fazer. Caso eu realize um commit neste momento a versão do arquivo que será feita a snapshot será antes da modificação que eu realizei, ou seja, não será a versão que se encontra presente no meu diretório corrente. Para commitar a nova versão eu tenho que executar novamente o comando git add ( que é um comando multi&minus;proposito como se pode perceber) e então executar o comando git commit.
+Bom explicando o que podemos fazer. Caso eu realize um commit neste momento a versão do arquivo que será feita a snapshot será antes da modificação que eu realizei, ou seja, não será a versão que se encontra presente no meu diretório corrente. Para commitar a nova versão eu tenho que executar novamente o comando git add ( que é um comando multi-proposito como se pode perceber) e então executar o comando git commit.
 
 ##Removendo arquivos
 
-Para remover um arquivo do Git você deve removê&minus;lo da sua área de staging e então commitar. O comando git rm faz isso e ainda remove o arquivo do seu diretório, então o arquivo não aparecerá com o status Untracked.
+Para remover um arquivo do Git você deve removê-lo da sua área de staging e então commitar. O comando git rm faz isso e ainda remove o arquivo do seu diretório, então o arquivo não aparecerá com o status Untracked.
 <pre><code>
 $ git rm GitBlog/Class1.cs
 </code></pre>
@@ -92,9 +92,9 @@ Vamos supor que você tenha feito commit de todos os seus arquivos. Logo seu dir
 <pre><code>
 $ git add Class1.cs
 </code></pre>
-Agora Class1.cs possui o status Tracked. No entanto você apenas deseja removê&minus;lo da área de staging, levando&minus;o do status Tracked para Untracked. Para isso execute o comando:
+Agora Class1.cs possui o status Tracked. No entanto você apenas deseja removê-lo da área de staging, levando-o do status Tracked para Untracked. Para isso execute o comando:
 <pre><code>
-$ git rm &minus;&minus;cached Class1.cs
+$ git rm --cached Class1.cs
 </code></pre>
 Abaixo, o que aconteceu:
 
@@ -104,7 +104,7 @@ Para isso o arquivo só será removido da área de staging após o próximo comm
 
 ##Fazendo Unstaging de um arquivo Staged
 
-Seguindo o modelo anterior você realizou um git add no arquivo Class1.cs e agora ele se encontra staged. E você deseja simplesmente fazer o Unstaging do arquivo deixando&minus;o com o status Untracked. Para isso execute o seguinte comando:
+Seguindo o modelo anterior você realizou um git add no arquivo Class1.cs e agora ele se encontra staged. E você deseja simplesmente fazer o Unstaging do arquivo deixando-o com o status Untracked. Para isso execute o seguinte comando:
 
 <pre><code>
 $ git reset HEAD Class1.cs

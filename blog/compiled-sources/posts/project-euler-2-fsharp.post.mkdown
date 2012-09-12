@@ -14,9 +14,9 @@ Considerando os termos da Sequencia de Fibonacci cujos valores não excedam 4 mi
 <pre><code>
 let fibonacci =
     (0, 1) 
-    |> Seq.unfold(fun (current, next) &minus;> Some(current, (next, current + next)))
-    |> Seq.takeWhile(fun x &minus;> x <= 4000000)
-    |> Seq.filter(fun x &minus;> x % 2 = 0)
+    |> Seq.unfold(fun (current, next) -> Some(current, (next, current + next)))
+    |> Seq.takeWhile(fun x -> x <= 4000000)
+    |> Seq.filter(fun x -> x % 2 = 0)
     |> Seq.sum
 </code></pre>
 
@@ -26,7 +26,7 @@ Na linha 1 temos a definição do valor Fibonacci que não recebe nenhum parâme
 
 Na linha 2 temos uma tupla (0,1), (muito elegante essa definição de Tuplas não?) que serve como estado inicial para nossa função Seq.unfold.
 
-Na linha 3 temos o operador pipe&minus;forward (|>) que como expliquei em um post anterior está usando nossa tupla e passando para a função Seq.unfold como ultimo parâmetro desta função. 
+Na linha 3 temos o operador pipe-forward (|>) que como expliquei em um post anterior está usando nossa tupla e passando para a função Seq.unfold como ultimo parâmetro desta função. 
 
 A função unfold está definida no modulo Seq, e é responsavel por gerar todos os números das serie de Fibonacci. Vamos analisar sua assinatura para podemos entender melhor o que essa função faz:
 

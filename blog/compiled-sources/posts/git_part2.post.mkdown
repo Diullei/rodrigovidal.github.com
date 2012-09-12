@@ -1,5 +1,5 @@
  	
-Vamos lá pessoal, na [parte 1](http://rodrigovidal.github.com/#!/post/2/Controle&minus;de&minus;Versão&minus;com&minus;Git&minus;&minus;&minus;Parte&minus;1), falei um pouco sobre os tipos de Sistemas de Controle de Versão. Seguindo..
+Vamos lá pessoal, na [parte 1](http://rodrigovidal.github.com/#!/post/2/Controle-de-Versão-com-Git---Parte-1), falei um pouco sobre os tipos de Sistemas de Controle de Versão. Seguindo..
 
 Bom espero que voce tenha baixado o Msysgit , caso não tenha feito ainda acesse aqui. A instalação é padrão Windows.
 
@@ -13,8 +13,8 @@ Rode os seguinte comandos no Bash
 
 <pre>
 <code>
-$ git config &minus;&minus;global user.name Rodrigo Vidal
-$ git config &minus;&minus;global user.email rodrigovidal777@gmail.com
+$ git config --global user.name Rodrigo Vidal
+$ git config --global user.email rodrigovidal777@gmail.com
 </code>
 </pre>
 
@@ -22,7 +22,7 @@ Após ter configurado sua identidade, você pode verificar suas configurações 
 
 <pre>
 <code>
-$ git config &minus;&minus;list
+$ git config --list
 </code>
 </pre>
 
@@ -30,7 +30,7 @@ $ git config &minus;&minus;list
 
 O Github é na verdade uma rede social para desenvolvedores, onde é possivel contribuir para projetos opensource, acompanhar seu desenvolvimento e criar novos.
 
-Para que essa conexão entre o Git e o Github seja possivel você precisar criar uma chave local e informá&minus;la ao Github.
+Para que essa conexão entre o Git e o Github seja possivel você precisar criar uma chave local e informá-la ao Github.
 
 <pre>
 <code>
@@ -41,7 +41,7 @@ $ cd ~/.ssh
 
 <pre>
 <code>
-$ ssh&minus;keygen &minus;t rsa &minus;C email@provedor.com
+$ ssh-keygen -t rsa -C email@provedor.com
 </code>
 </pre>
 
@@ -53,7 +53,7 @@ Pressione Enter. Em seguida será solicitado a criação de uma senha.
 
 Agora abra o arquivo id_rsa.pub gerado (Ex.: C:/Users/rodrigovidal/.ssh) com um editor de texto e copie todo o seu conteudo.
 
-Vá ao GitHub &minus;> Account Settings &minus;> SSH Public Keys.
+Vá ao GitHub -> Account Settings -> SSH Public Keys.
 
 Clique em Add another public key. Dê um nome para a chavé pública que você criou . Cole o conteúdo do arquivo id_rsa.pub que você copiou no passo anterior no campo key.
 

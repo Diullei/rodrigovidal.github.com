@@ -8,7 +8,7 @@ A primeira parte foi mais basica e para um público mais iniciante. A segunda pa
 
 Abaixo segue os slides da palestra.. caso você tenha participado.. conto com seu feedback nos comentários. Os slides utilizados são um subset dos utilizados pelo Anders Hejlsberg no Build11.
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/9803109" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border&minus;width:1px 1px 0;margin&minus;bottom:5px" allowfullscreen> </iframe> <div style="margin&minus;bottom:5px"> <strong> <a href="http://www.slideshare.net/rodrigovidal777/c5&minus;vb11&minus;f3" title="C5, vb11, f3" target="_blank">C5, vb11, f3</a> </strong> from <strong><a href="http://www.slideshare.net/rodrigovidal777" target="_blank">Rodrigo Vidal</a></strong> </div>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/9803109" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/rodrigovidal777/c5-vb11-f3" title="C5, vb11, f3" target="_blank">C5, vb11, f3</a> </strong> from <strong><a href="http://www.slideshare.net/rodrigovidal777" target="_blank">Rodrigo Vidal</a></strong> </div>
 
 Abraço,
 Rodrigo Vidal

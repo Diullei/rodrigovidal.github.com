@@ -11,7 +11,7 @@ Esta versão liberada em Preview apresenta duas principais features e uma featur
 
 ##Type Providers
 
-Os Type Providers vem pra resolver o problema de aplicações complex data&minus;centric. Ele fornece em tempo de compilação acesso a objetos tipados, oriundas de diversas fontes, através de providers. O namespace destes providers é Microsoft.FSharp.Data.TypeProviders, é preciso adicionar a referência para a dll FSharp.Data.TypeProviders.dll para que se tenha acesso a esse namespace.
+Os Type Providers vem pra resolver o problema de aplicações complex data-centric. Ele fornece em tempo de compilação acesso a objetos tipados, oriundas de diversas fontes, através de providers. O namespace destes providers é Microsoft.FSharp.Data.TypeProviders, é preciso adicionar a referência para a dll FSharp.Data.TypeProviders.dll para que se tenha acesso a esse namespace.
 
 Esta versão já veio com alguns Type Providers embutidos como para OData, WSDL e SQL (por L2SQL ou Entitiy Framework)
 
@@ -29,15 +29,15 @@ Vejam o exemplo acima agora usando uma Query Expression:
 
 Como podem ver o highlight do VS11 ainda não está contemplando as novas keywords até porque há chances de algumas delas mudarem de nome ou serem aprimoradas. Mas basicamente esta é a idéia, integrar queries à linguagem na mesma abordagem LINQ. Legal né?
 
-##Auto&minus;Implemented Properties
+##Auto-Implemented Properties
 
 Sintaxe segundo o MSDN
 
 // Automatically implemented properties. 
 [attributes ] 
-[ static ] member val [accessibility&minus;modifier ] PropertyName = initialization&minus;expression [ with get, set ]
+[ static ] member val [accessibility-modifier ] PropertyName = initialization-expression [ with get, set ]
 
-Essa é a forma de se definir uma propriedade auto&minus;implementada. Como sabemos F# é uma linguagem multi&minus;paradigma, e entre eles está o paradigma OO. No entanto, esta funcionalidade tem umas peculiridades que serão analisadas melhor em futuros posts.
+Essa é a forma de se definir uma propriedade auto-implementada. Como sabemos F# é uma linguagem multi-paradigma, e entre eles está o paradigma OO. No entanto, esta funcionalidade tem umas peculiridades que serão analisadas melhor em futuros posts.
 
 ![Valid XHTML](/blog/img/autoprop_thumb.jpg)
 

@@ -95,13 +95,13 @@ let add x y = x + y
 que equivale a
 
  <pre><code>
-let add = fun x &minus;> fun y &minus;> x + y
+let add = fun x -> fun y -> x + y
 </code></pre>
 
 ou em Haskell
 
  <pre><code>
-let add = \x &minus;> \y &minus;> x + y
+let add = \x -> \y -> x + y
 </code></pre>
 
 Você está definindo uma função do tipo
@@ -116,7 +116,7 @@ Aplicação parcial envolve passar menos argumentos para uma função que recebe
 
 IMAGEM
 
-Obs.: Currying é um processo que habilita a usarmos aplicação parcial de funções. Na sessão anterior obtemos uma função em sua forma curried, agora iremos utilizá&minus;la de forma parcial.
+Obs.: Currying é um processo que habilita a usarmos aplicação parcial de funções. Na sessão anterior obtemos uma função em sua forma curried, agora iremos utilizá-la de forma parcial.
 
 De maneira simples podemos aplicar parcialmente a função add definida na sessão anterior para criar uma nova função:
 
@@ -146,7 +146,7 @@ Criei uma nova função add5 a partir da função add passando como parâmetro d
 
 A aplicação de funções em F# ou Haskell é associativa a esquerda. Coloquei os parênteses, para facilitar o entendimento do que isso significa. Primeiro a função add é aplicada com apenas um parâmetro 5, essa aplicação retorna uma nova função, e então essa nova função é aplicada com o valor 6.
 
-Repare, no exemplo em C# transformamos uma função Uncurried, em uma função Curried via função Curry. Com isso fomos capazes de aplicar a função parcialmente, passando apenas um dos parâmetros necessários. No exemplo em F# não é necessário fazer Curry, pois a função já está na forma Curried por padrão, logo conseguimos aplicá&minus;la parcialmente com grande facilidade.
+Repare, no exemplo em C# transformamos uma função Uncurried, em uma função Curried via função Curry. Com isso fomos capazes de aplicar a função parcialmente, passando apenas um dos parâmetros necessários. No exemplo em F# não é necessário fazer Curry, pois a função já está na forma Curried por padrão, logo conseguimos aplicá-la parcialmente com grande facilidade.
 
 Outro exemplo:
 
@@ -154,16 +154,16 @@ Outro exemplo:
 
 <pre><code>
 let result = [1..100]
-                 |> List.map (fun x &minus;> x * 2)
-                 |> List.filter (fun x &minus;> x < 50)
+                 |> List.map (fun x -> x * 2)
+                 |> List.filter (fun x -> x < 50)
                  |> List.sum
 </code></pre>
 
 Note que estamos aplicando as funções map e filter parcialmente. Isso acontece pois a função map assim como a filter recebem dois parâmetros, uma função (no caso do map uma projeção e no caso do filter um predicado) e uma lista como parâmetro. Em ambos os casos como resultado temos uma função do tipo:
 
-**int list &minus;> int list**
+**int list -> int list**
 
-Ou seja, que recebe uma lista e retorna uma lista. Como já vimos em posts anteriores, o operador pipe&minus;forward pode ser definido como:
+Ou seja, que recebe uma lista e retorna uma lista. Como já vimos em posts anteriores, o operador pipe-forward pode ser definido como:
 
 <pre><code>
 let (|>) x f = f x
@@ -191,9 +191,9 @@ static void Main(string[] args)
     Func<IEnumerable<int>, Func<int,int>, IEnumerable<int>> select = IEnumerableEx.Select;
     //Versão curried
     Func<IEnumerable<int>, Func<Func<int, int>, IEnumerable<int>>> selectCurried = select.Curry();
-    //Aplicação parcial &minus; passando apenas 1 parametro ao invés de 2
+    //Aplicação parcial - passando apenas 1 parametro ao invés de 2
     var listaSelecionada = selectCurried(lista);
-    //Aplicação parcial &minus; passando o segundo parametro que faltava
+    //Aplicação parcial - passando o segundo parametro que faltava
     var listaDobrada = listaSelecionada(x => x * 2);
     var listaTriplicada = listaSelecionada(x => x * 3);
     var listaAoQuadrado = listaSelecionada(x => x * x);

@@ -40,18 +40,18 @@ let charRange = ['a'..'f']
 //val charRange : char list = ['a'; 'b'; 'c'; 'd'; 'e'; 'f']
 List Comprehensions
 
-let prepost x = [ yield x&minus;1; yield x; yield x+1] 
+let prepost x = [ yield x-1; yield x; yield x+1] 
 let result = prepost 10 
-//val prepost : int &minus;> int list 
+//val prepost : int -> int list 
 //val result : int list = [9; 10; 11]
 </code></pre>
 
 No exemplo acima criamos uma função chamada prepost que recebe um valor x e a partir disso cria uma lista com três valores, o antecessor, o proprio, e seu sucessor. Perceba que utilizamos a palavara chave yield, que em F# é o equivalente como você ja deve ter imaginando do nosso querido yield return.
 
 <pre><code>
-let multiplesOf3 x = [for i in 1..10 &minus;> x * i] 
+let multiplesOf3 x = [for i in 1..10 -> x * i] 
 let result = multiplesOf3 5 
-//val multiplesOf3 : int &minus;> int list
+//val multiplesOf3 : int -> int list
 //val result : int list = [5; 10; 15; 20; 25; 30; 35; 40; 45; 50]
 </code></pre>
 
@@ -86,13 +86,13 @@ let head = List.head [1..10]
 let tail = List.tail [1..10] 
 //val tail : int list = [2; 3; 4; 5; 6; 7; 8; 9; 10]
 </code></pre>
-Estas funções são essenciais quando estamos lidando com recursão e por isso resolvi apresentá&minus;las aqui. Ja falamos bastante sobre como trabalhar com listas com F#, no entanto, o mais interessante ainda estar por vir. Você como um leitor atento deve ter reparado que estas listas não são as mesmas listas que acompanham o .NET Framework, ou as listas, que você está acostumado a utilizar com C# no namespace System.Collections.Generic, e o tipo List<>.
+Estas funções são essenciais quando estamos lidando com recursão e por isso resolvi apresentá-las aqui. Ja falamos bastante sobre como trabalhar com listas com F#, no entanto, o mais interessante ainda estar por vir. Você como um leitor atento deve ter reparado que estas listas não são as mesmas listas que acompanham o .NET Framework, ou as listas, que você está acostumado a utilizar com C# no namespace System.Collections.Generic, e o tipo List<>.
 
 Mas então o que essas listas tem de diferente?
 
 ###Listas Imutáveis
 
-Uma lista ser imutável significa que nós podemos construir uma lista, nós não podemos pegar uma lista existente e modificá&minus;la; nós não podemos adicionar ou remover um elemento. Funções que precisam adicionar novos elementos ou removê&minus;los sempre retornarão uma nova lista sem modificar a original, porque modificar uma lista é simplesmente impossivel. Isso está de acordo com o conceito de nós eliminarmos efeitos colaterais e indesejados em funções que manipulam listas.
+Uma lista ser imutável significa que nós podemos construir uma lista, nós não podemos pegar uma lista existente e modificá-la; nós não podemos adicionar ou remover um elemento. Funções que precisam adicionar novos elementos ou removê-los sempre retornarão uma nova lista sem modificar a original, porque modificar uma lista é simplesmente impossivel. Isso está de acordo com o conceito de nós eliminarmos efeitos colaterais e indesejados em funções que manipulam listas.
 
 Seguindo o post sobre tuplas vou mostrar como seria de maneira simples uma Lista imutável em C#
 <pre><code>

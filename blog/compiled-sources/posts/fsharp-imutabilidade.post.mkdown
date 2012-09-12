@@ -1,5 +1,5 @@
 
-Pode&minus;se notar que, eu de maneira suspeita não utilizei a palavra variável nos demais artigos sobre F#, mas sim a palavra value. A razão para isso é que em programação funcional, a estruturas que você declara são imutáveis por padrão, ou seja, não podem ser mudadas.
+Pode-se notar que, eu de maneira suspeita não utilizei a palavra variável nos demais artigos sobre F#, mas sim a palavra value. A razão para isso é que em programação funcional, a estruturas que você declara são imutáveis por padrão, ou seja, não podem ser mudadas.
 
 Se uma função em algum momento muda o estado do programa, como escrever em um arquivo ou mudar o valor de uma variavel global em memória, então é conhecido como side effect ou efeito colateral. Por exemplo, invocando a função printfn, ela retorna unit, mas tem o efeito colateral de escrever um texto na tela. De maneira similar, se uma função altera o valor de alguma coisa em memoria, este também é um efeito colateral.
 
@@ -46,17 +46,17 @@ Dado o código abaixo.
 <pre><code>
 static void Main(string[] args)
         {
-            Console.WriteLine("&minus;&minus;System.String é imutável");
+            Console.WriteLine("--System.String é imutável");
             string linguagem = "F#";
             string outraLinguagem = linguagem;
             outraLinguagem = "Boo";
             Console.WriteLine(linguagem);
             Console.WriteLine(outraLinguagem);
 
-            Console.WriteLine("&minus;&minus;StringBuilder é mutável");
+            Console.WriteLine("--StringBuilder é mutável");
             StringBuilder nome = new StringBuilder("Rodrigo Vidal");
             StringBuilder outroNome = nome;
-            outroNome.Append(" &minus; Don Syme");
+            outroNome.Append(" - Don Syme");
             Console.WriteLine(nome.ToString());
             Console.WriteLine(outroNome.ToString());
 
@@ -92,7 +92,7 @@ Este trecho terá erro em tempo de compilação, agora ele é irrelevante, mas e
 
 <pre><code>
 let nome = "Rodrigo Vidal"
-nome <&minus; "Don Syme"
+nome <- "Don Syme"
 </code></pre>
 
 Você pode imaginar que esta é a forma de se tentar burlar a imutabilidade, mas não é. Este codigo exibirá a mensagem error FS0027: This value is not mutable. Ou seja, o Value nome não é mutável, e esta operação não é permitida.
